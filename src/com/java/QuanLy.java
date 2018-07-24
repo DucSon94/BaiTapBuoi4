@@ -51,10 +51,10 @@ public class QuanLy {
         this.soNhanVien = soNhanVien;
     }
 
-    private float getPhuCap(int soNhanVien) {
-        if (soNhanVien < 10) {
+    private float getPhuCap() {
+        if (this.soNhanVien < 10) {
             return 500;
-        } else if (soNhanVien >= 10 || soNhanVien <= 20) {
+        } else if (this.soNhanVien >= 10 || soNhanVien <= 20) {
             return 1000;
         } else {
             return 2000;
@@ -63,7 +63,7 @@ public class QuanLy {
     }
 
     public float getThuNhap() {
-        return luong + getPhuCap(soNhanVien);
+        return luong + getPhuCap();
     }
 
     public void nhapThongTin() {
@@ -80,7 +80,7 @@ public class QuanLy {
     }
 
     public void hienThongTin() {
-        float phuCap = getPhuCap(soNhanVien);
+        float phuCap = getPhuCap();
         System.out.println("ma: " + this.ma + " Ten: " + this.ten + " Gioi tinh: " + this.gioiTinh.getTenGioiTinh()
                 + "Luong: " + this.luong + " So nhan vien dang quan ly: " + this.soNhanVien + " phu cap: " + phuCap
                 + " Thu Nhap: " + getThuNhap());
