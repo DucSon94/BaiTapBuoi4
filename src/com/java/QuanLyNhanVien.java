@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class QuanLyNhanVien {
 
     // QuanLyNhanvien qlnv = new QuanLyNhanvien();
-    CongNhan[] danhSachCongNhan = null;
-    NhanVienVanPhong[] danhSachNhanVienVanPhong = null;
+    private CongNhan[] danhSachCongNhan = null;
+    private NhanVienVanPhong[] danhSachNhanVienVanPhong = null;
 
-    QuanLy[] danhSachQuanLy = null;
+    private QuanLy[] danhSachQuanLy = null;
 
     private CongNhan[] nhapDanhSachCongNhan() {
         boolean check = true;
